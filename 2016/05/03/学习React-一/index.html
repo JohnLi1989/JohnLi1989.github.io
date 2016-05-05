@@ -22,7 +22,7 @@ getI">
 
 getDefaultProps
 getI">
-<meta property="og:updated_time" content="2016-05-04T12:30:16.000Z">
+<meta property="og:updated_time" content="2016-05-05T15:15:43.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习React(一)">
 <meta name="twitter:description" content="React这么火,不学怎么能行!
@@ -237,7 +237,7 @@ getI">
 </ul>
 <p><code>componentWillReceiveProps</code><br>在任意时刻,组件的props都可以通过父组件来修改,在此之前,该方法会被调用,可以来更改props对象及更新state.<br><code>shouldComponentUpdate</code><br>如果确切的知道某个组件或者它的任何子组件不需要渲染新的props或state,将该方法返回false,则可以阻止render方法,以及位于render前后的钩子函数(该函数是非必需的,大多情况下没必要在开发中使用).<br><code>componentWillUpdate</code><br>和componentWillMount方法类似,组件会在接收到新的props或者state进行渲染之前调用该方法.<br>注:<em>不可在该方法中更新属性或状态,应该借助componentWillReceiveProps在运行时更新state.</em><br><code>render</code><br>同初始化阶段<br><code>componentDidUpdate</code><br>和componentDidMount类似,该方法可以更新已经渲染好的DOM.</p>
 <h2 id="销毁阶段"><a href="#销毁阶段" class="headerlink" title="销毁阶段"></a>销毁阶段</h2><p>销毁阶段只有一个钩子函数,即<code>componentWillUnMount</code>.<br>每当React使用完一个组件,这个组件就必须从DOM中卸载随后销毁.在销毁前,该方法会被触发.我们可以在其中做一些清理工作,在componentDidMount中添加的所有任务都需要在该方法中撤销,比如创建的计时器或事件监听器等.</p>
-
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2>
       
     </div>
     
