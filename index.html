@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <title>John</title>
+  <title>叶靖秋</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description">
 <meta property="og:type" content="website">
-<meta property="og:title" content="John">
+<meta property="og:title" content="叶靖秋">
 <meta property="og:url" content="http://johnli1989.github.io/index.html">
-<meta property="og:site_name" content="John">
+<meta property="og:site_name" content="叶靖秋">
 <meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="John">
+<meta name="twitter:title" content="叶靖秋">
 <meta name="twitter:description">
   
-    <link rel="alternative" href="/atom.xml" title="John" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="叶靖秋" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -32,16 +32,16 @@
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img lazy-src="/img/head.jpeg" class="js-avatar">
+			<img lazy-src="/img/head.jpg" class="js-avatar">
 			
 		</a>
 
 		<hgroup>
-		  <h1 class="header-author"><a href="/">John Li</a></h1>
+		  <h1 class="header-author"><a href="/">叶 靖 秋</a></h1>
 		</hgroup>
 
 		
-		<p class="header-subtitle">不想做后台的前端不是一个好的产品经理!</p>
+		<p class="header-subtitle">一个集美貌与智慧于一身的女子!</p>
 		
 
 		
@@ -100,7 +100,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud" id="js-tagcloud">
-						<a href="/tags/react/" style="font-size: 10px;">react</a>
+						<a href="/tags/Q33/" style="font-size: 10px;">Q33</a>
 					</div>
 				</section>
 				
@@ -118,20 +118,20 @@
       <nav id="mobile-nav">
   	<div class="overlay">
   		<div class="slider-trigger"></div>
-  		<h1 class="header-author js-mobile-header hide">John Li</h1>
+  		<h1 class="header-author js-mobile-header hide">叶 靖 秋</h1>
   	</div>
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
 			
-				<img lazy-src="/img/head.jpeg" class="js-avatar">
+				<img lazy-src="/img/head.jpg" class="js-avatar">
 			
 			</div>
 			<hgroup>
-			  <h1 class="header-author">John Li</h1>
+			  <h1 class="header-author">叶 靖 秋</h1>
 			</hgroup>
 			
-			<p class="header-subtitle">不想做后台的前端不是一个好的产品经理!</p>
+			<p class="header-subtitle">一个集美貌与智慧于一身的女子!</p>
 			
 			<nav class="header-menu">
 				<ul>
@@ -194,87 +194,8 @@
     <div class="article-info article-info-index">
       
       
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-学习React-一" class="article article-type-post" itemscope itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2016/05/03/学习React-一/" class="article-date">
-  	<time datetime="2016-05-03T14:49:06.000Z" itemprop="datePublished">2016-05-03</time>
-</a>
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy" />
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/03/学习React-一/">学习React(一)</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>React这么火,不学怎么能行!</p>
-<h1 id="组件的生命周期"><a href="#组件的生命周期" class="headerlink" title="组件的生命周期"></a>组件的生命周期</h1><p>组件(component)是React的核心,必须调用<code>React.createClass</code>来创建.<br>一个组件就是一个状态机,它有三种不同的状态:初始化(实例化)阶段,运行阶段,销毁阶段,React为每个阶段都提供了不同的钩子(hook)函数来作为响应.</p>
-<h2 id="初始化阶段"><a href="#初始化阶段" class="headerlink" title="初始化阶段"></a>初始化阶段</h2><p>一个组件初次被创建时,会依次调用下面的五个方法:</p>
-<ul>
-<li><strong>getDefaultProps</strong></li>
-<li><strong>getInitialState</strong></li>
-<li><strong>componentWillMount</strong></li>
-<li><strong>render</strong></li>
-<li><strong>componentDidMount</strong></li>
-</ul>
-<p><code>getDefaultProps</code><br>该方法是用来获取实例初始化之前的属性,它只会被调用一次,且会在所有的实例中共享.对于那些没有被父组件指定props的新建实例来说,这个方法返回的对象可用于为实例设置默认的props值.<br><code>getInitialState</code><br>该方法用来初始化每个实例特有的状态state.对于组件的每个实例来说,它的调用次数有且仅有一次.<br><code>componentWillMount</code><br>该方法会在完成首次渲染之前被调用,并且这是再render方法调用前最后一次修改组件状态的机会.<br><code>render</code><br>组件唯一一个必须的方法.它将会创建一个虚拟的DOM,用来表示组件的输出.该方法需满足下面几点:</p>
-<ul>
-<li>只能通过<code>this.props</code>和<code>this.state</code>来访问数据;</li>
-<li>只能有一个顶层组件(不能返回一组元素);</li>
-<li>不允许修改组件的状态和DOM输出.<br><code>componentDidMount</code><br>在真实的DOM已经被成功渲染后,可以在该方法内部通过<code>this.getDOMNode</code>来访问到它.</li>
-</ul>
-<h2 id="运行阶段"><a href="#运行阶段" class="headerlink" title="运行阶段"></a>运行阶段</h2><p>组件已经被渲染好,并且用户可以与它交互了.通常是通过一次事件来触发一个事件处理器,随着用户改变了组件或是整个应用的状态,便有新的state流入组件树,从而有机会去操控它.</p>
-<ul>
-<li><strong>componentWillReceiveProps</strong></li>
-<li><strong>shouldComponentUpdate</strong></li>
-<li><strong>componentWillUpdate</strong></li>
-<li><strong>render</strong></li>
-<li><strong>componentDidUpdate</strong></li>
-</ul>
-<p><code>componentWillReceiveProps</code><br>在任意时刻,组件的props都可以通过父组件来修改,在此之前,该方法会被调用,可以来更改props对象及更新state.<br><code>shouldComponentUpdate</code><br>如果确切的知道某个组件或者它的任何子组件不需要渲染新的props或state,将该方法返回false,则可以阻止render方法,以及位于render前后的钩子函数(该函数是非必需的,大多情况下没必要在开发中使用).<br><code>componentWillUpdate</code><br>和componentWillMount方法类似,组件会在接收到新的props或者state进行渲染之前调用该方法.<br>注:<em>不可在该方法中更新属性或状态,应该借助componentWillReceiveProps在运行时更新state.</em><br><code>render</code><br>同初始化阶段<br><code>componentDidUpdate</code><br>和componentDidMount类似,该方法可以更新已经渲染好的DOM.</p>
-<h2 id="销毁阶段"><a href="#销毁阶段" class="headerlink" title="销毁阶段"></a>销毁阶段</h2><p>销毁阶段只有一个钩子函数,即<code>componentWillUnMount</code>.<br>每当React使用完一个组件,这个组件就必须从DOM中卸载随后销毁.在销毁前,该方法会被触发.我们可以在其中做一些清理工作,在componentDidMount中添加的所有任务都需要在该方法中撤销,比如创建的计时器或事件监听器等.</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>React生命周期方法提供了精心设计的钩子函数,会伴随组件的整个生命周期.和状态机类似,每个组件都被设计成了能够在整个生命周期中输出稳定,语义话的标签.</p>
-
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
 	<div class="article-tag tagcloud">
-		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/react/">react</a></li></ul>
+		<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Q33/">Q33</a></li></ul>
 	</div>
 
       
@@ -370,7 +291,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2017 John Li
+    		&copy; 2017 叶 靖 秋
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
